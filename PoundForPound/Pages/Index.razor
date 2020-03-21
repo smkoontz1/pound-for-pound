@@ -3,50 +3,83 @@
 <h1>Pound For Pound</h1>
 
 <label>Team 1</label>
-<select @onchange="UpdateTeam1Value">
+<select @onchange="UpdateTeam1">
     @foreach (Team _team in TeamRosterService.Teams)
     {
-        <option value="@(_team.Id)">@_team.DisplayName</option>
+        <option value="@(_team.Id)" selected=@(_team.Id == _team1.Id)>@_team.DisplayName</option>
     }
 </select>
 
 <label>Team 2</label>
-<select @onchange="UpdateTeam2Value">
+<select @onchange="UpdateTeam2">
     @foreach (Team _team in TeamRosterService.Teams)
     {
-        <option value="@(_team.Id)">@_team.DisplayName</option>
+        <option value="@(_team.Id)" selected=@(_team.Id == _team2.Id)>@_team.DisplayName</option>
     }
 </select>
 
-<p>Team 1 Cumulative Offense Weight: @_team1Weight</p>
+<br>
+<br>
 
-<p>Team 2 Cumulative Offense Weight: @_team2Weight</p>
+<table>
+    <tr>
+        <th></th>
+        <th>@_team1.DisplayName</th>
+        <th>@_team2.DisplayName</th>
+    </tr>
+    <tr>
+        <td>Offense</td>
+        <td>@(TeamRosterService.GetWeightInLbs(_team1, TeamDivision.Offense, _team1RawHtml)) lbs</td>
+        <td>@(TeamRosterService.GetWeightInLbs(_team2, TeamDivision.Offense, _team2RawHtml)) lbs</td>
+    </tr>
+    <tr>
+        <td>Defense</td>
+        <td>@(TeamRosterService.GetWeightInLbs(_team1, TeamDivision.Defense, _team1RawHtml)) lbs</td>
+        <td>@(TeamRosterService.GetWeightInLbs(_team2, TeamDivision.Defense, _team2RawHtml)) lbs</td>
+    </tr>
+    <tr>
+        <td>Special Teams</td>
+        <td>@(TeamRosterService.GetWeightInLbs(_team1, TeamDivision.SpecialTeams, _team1RawHtml)) lbs</td>
+        <td>@(TeamRosterService.GetWeightInLbs(_team2, TeamDivision.SpecialTeams, _team2RawHtml)) lbs</td>
+    </tr>
+</table>
 
 @code {
+
+    // Team 1 Fields
     private int _team1Id = 1;
+
+    private Team _team1 = new Team();
+
+    private string _team1RawHtml;
     
+
+    // Team 2 Fields
     private int _team2Id = 2;
 
-    private double _team1Weight = 0;
+    private Team _team2 = new Team();
 
-    private double _team2Weight = 0;
+    private string _team2RawHtml;
 
     protected override void OnInitialized()
     {
         Console.WriteLine("OnInitialized hit.");
-        _team1Weight = TeamRosterService.GetTeamWeight(_team1Id);
-        _team2Weight = TeamRosterService.GetTeamWeight(_team2Id);
+        _team1 = TeamRosterService.GetTeamById(_team1Id);
+        _team1RawHtml = TeamRosterService.GetRawHtml(_team1.RosterUrl);
+
+        _team2 = TeamRosterService.GetTeamById(_team2Id);
+        _team2RawHtml = TeamRosterService.GetRawHtml(_team2.RosterUrl);
     }
 
-    private void UpdateTeam1Value(ChangeEventArgs args)
+    private void UpdateTeam1(ChangeEventArgs args)
     {
-        _team1Id = Int32.Parse(args.Value.ToString());
-        _team1Weight = TeamRosterService.GetTeamWeight(_team1Id);
+        _team1 = TeamRosterService.GetTeamById(Int32.Parse(args.Value.ToString()));
+        _team1RawHtml = TeamRosterService.GetRawHtml(_team1.RosterUrl);
     }
 
-    private void UpdateTeam2Value(ChangeEventArgs args)
+    private void UpdateTeam2(ChangeEventArgs args)
     {
-        _team2Id = Int32.Parse(args.Value.ToString());
-        _team2Weight = TeamRosterService.GetTeamWeight(_team2Id);
+        _team2 = TeamRosterService.GetTeamById(Int32.Parse(args.Value.ToString()));
+        _team2RawHtml = TeamRosterService.GetRawHtml(_team2.RosterUrl);
     }
 }

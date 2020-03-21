@@ -10,4 +10,11 @@ namespace PoundForPound.Models
 
         public string RosterUrl { get; set; }
     }
+
+    public enum TeamDivision
+    {
+        Offense,
+        Defense,
+        SpecialTeams
+    }
 }

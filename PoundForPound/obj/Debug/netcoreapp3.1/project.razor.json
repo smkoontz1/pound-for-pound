@@ -13,6 +13,251 @@
     "TagHelpers": [
       {
         "Kind": "Components.Component",
+        "Name": "PoundForPound.App",
+        "AssemblyName": "PoundForPound",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PoundForPound.App"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "PoundForPound.App",
+        "AssemblyName": "PoundForPound",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PoundForPound.App",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PoundForPound.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "PoundForPound.Pages.Error",
+        "AssemblyName": "PoundForPound",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Error",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PoundForPound.Pages.Error"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "PoundForPound.Pages.Error",
+        "AssemblyName": "PoundForPound",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PoundForPound.Pages.Error",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PoundForPound.Pages.Error",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "PoundForPound.Pages.FetchData",
+        "AssemblyName": "PoundForPound",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PoundForPound.Pages.FetchData"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "PoundForPound.Pages.FetchData",
+        "AssemblyName": "PoundForPound",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PoundForPound.Pages.FetchData",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PoundForPound.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "PoundForPound.Pages.Counter",
+        "AssemblyName": "PoundForPound",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PoundForPound.Pages.Counter"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "PoundForPound.Pages.Counter",
+        "AssemblyName": "PoundForPound",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PoundForPound.Pages.Counter",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PoundForPound.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "PoundForPound.Pages.Index",
+        "AssemblyName": "PoundForPound",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PoundForPound.Pages.Index"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "PoundForPound.Pages.Index",
+        "AssemblyName": "PoundForPound",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PoundForPound.Pages.Index",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PoundForPound.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
         "Name": "PoundForPound.Shared.NavMenu",
         "AssemblyName": "PoundForPound",
         "Documentation": null,
@@ -57,85 +302,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "PoundForPound.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "PoundForPound.Shared.SurveyPrompt",
-        "AssemblyName": "PoundForPound",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            },
-            "BoundAttributeParameters": []
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PoundForPound.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "PoundForPound.Shared.SurveyPrompt",
-        "AssemblyName": "PoundForPound",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PoundForPound.Shared.SurveyPrompt",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            },
-            "BoundAttributeParameters": []
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PoundForPound.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -273,246 +439,80 @@
       },
       {
         "Kind": "Components.Component",
-        "Name": "PoundForPound.App",
+        "Name": "PoundForPound.Shared.SurveyPrompt",
         "AssemblyName": "PoundForPound",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App",
+            "TagName": "SurveyPrompt",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
             "Diagnostics": []
           }
         ],
-        "BoundAttributes": [],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PoundForPound.App"
+          "Common.TypeName": "PoundForPound.Shared.SurveyPrompt"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "PoundForPound.App",
+        "Name": "PoundForPound.Shared.SurveyPrompt",
         "AssemblyName": "PoundForPound",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "PoundForPound.App",
+            "TagName": "PoundForPound.Shared.SurveyPrompt",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
             "Diagnostics": []
           }
         ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PoundForPound.App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "PoundForPound.Pages.Counter",
-        "AssemblyName": "PoundForPound",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
+        "BoundAttributes": [
           {
-            "TagName": "Counter",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            },
+            "BoundAttributeParameters": []
           }
         ],
-        "BoundAttributes": [],
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PoundForPound.Pages.Counter"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "PoundForPound.Pages.Counter",
-        "AssemblyName": "PoundForPound",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PoundForPound.Pages.Counter",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PoundForPound.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "PoundForPound.Pages.Error",
-        "AssemblyName": "PoundForPound",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Error",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PoundForPound.Pages.Error"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "PoundForPound.Pages.Error",
-        "AssemblyName": "PoundForPound",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PoundForPound.Pages.Error",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PoundForPound.Pages.Error",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "PoundForPound.Pages.FetchData",
-        "AssemblyName": "PoundForPound",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PoundForPound.Pages.FetchData"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "PoundForPound.Pages.FetchData",
-        "AssemblyName": "PoundForPound",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PoundForPound.Pages.FetchData",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PoundForPound.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "PoundForPound.Pages.Index",
-        "AssemblyName": "PoundForPound",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PoundForPound.Pages.Index"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "PoundForPound.Pages.Index",
-        "AssemblyName": "PoundForPound",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PoundForPound.Pages.Index",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PoundForPound.Pages.Index",
+          "Common.TypeName": "PoundForPound.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -21021,7 +21021,7 @@
         }
       }
     ],
-    "CSharpLanguageVersion": 703
+    "CSharpLanguageVersion": 800
   },
   "RootNamespace": "PoundForPound",
   "Documents": [
