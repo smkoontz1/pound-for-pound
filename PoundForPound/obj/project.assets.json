@@ -8,8 +8,7 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Steve\\.nuget\\packages\\": {},
-    "C:\\program files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\smkoo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -17,14 +16,11 @@
       "projectUniqueName": "C:\\_git\\pound-for-pound\\PoundForPound\\PoundForPound.csproj",
       "projectName": "PoundForPound",
       "projectPath": "C:\\_git\\pound-for-pound\\PoundForPound\\PoundForPound.csproj",
-      "packagesPath": "C:\\Users\\Steve\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\smkoo\\.nuget\\packages\\",
       "outputPath": "C:\\_git\\pound-for-pound\\PoundForPound\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Steve\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\smkoo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -63,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\program files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,50 +1,69 @@
 ﻿@page "/"
 
-<h1>Pound For Pound</h1>
-
-<label>Team 1</label>
-<select @onchange="UpdateTeam1">
-    @foreach (Team _team in TeamRosterService.Teams)
-    {
-        <option value="@(_team.Id)" selected=@(_team.Id == _team1.Id)>@_team.DisplayName</option>
-    }
-</select>
-
-<label>Team 2</label>
-<select @onchange="UpdateTeam2">
-    @foreach (Team _team in TeamRosterService.Teams)
-    {
-        <option value="@(_team.Id)" selected=@(_team.Id == _team2.Id)>@_team.DisplayName</option>
-    }
-</select>
-
-<br>
-<br>
-
-<table>
-    <tr>
-        <th></th>
-        <th>@_team1.DisplayName</th>
-        <th>@_team2.DisplayName</th>
-    </tr>
-    <tr>
-        <td>Offense</td>
-        <td>@(TeamRosterService.GetWeightInLbs(_team1, TeamDivision.Offense, _team1RawHtml)) lbs</td>
-        <td>@(TeamRosterService.GetWeightInLbs(_team2, TeamDivision.Offense, _team2RawHtml)) lbs</td>
-    </tr>
-    <tr>
-        <td>Defense</td>
-        <td>@(TeamRosterService.GetWeightInLbs(_team1, TeamDivision.Defense, _team1RawHtml)) lbs</td>
-        <td>@(TeamRosterService.GetWeightInLbs(_team2, TeamDivision.Defense, _team2RawHtml)) lbs</td>
-    </tr>
-    <tr>
-        <td>Special Teams</td>
-        <td>@(TeamRosterService.GetWeightInLbs(_team1, TeamDivision.SpecialTeams, _team1RawHtml)) lbs</td>
-        <td>@(TeamRosterService.GetWeightInLbs(_team2, TeamDivision.SpecialTeams, _team2RawHtml)) lbs</td>
-    </tr>
-</table>
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Pound for Pound</h1>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-4 mb-4">
+            <label>Team 1</label>
+            <select @onchange="UpdateTeam1">
+                @foreach (Team _team in TeamRosterService.Teams)
+                {
+                    <option value="@(_team.Id)" selected=@(_team.Id == _team1.Id)>@_team.DisplayName</option>
+                }
+            </select>
+        </div>
+        <div class="col col-lg-4 mb-4">
+            <label>Team 2</label>
+            <select @onchange="UpdateTeam2">
+                @foreach (Team _team in TeamRosterService.Teams)
+                {
+                    <option value="@(_team.Id)" selected=@(_team.Id == _team2.Id)>@_team.DisplayName</option>
+                }
+            </select>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-lg-8">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">@_team1.DisplayName</th>
+                        <th scope="col">@_team2.DisplayName</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Offense</th>
+                        <td>@(_team1OffenseWeight.ToString("#,#", CultureInfo.InvariantCulture)) lbs</td>
+                        <td>@(_team2OffenseWeight.ToString("#,#", CultureInfo.InvariantCulture)) lbs</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Defense</th>
+                        <td>@(_team1DefenseWeight.ToString("#,#", CultureInfo.InvariantCulture)) lbs</td>
+                        <td>@(_team2DefenseWeight.ToString("#,#", CultureInfo.InvariantCulture)) lbs</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Special Teams</th>
+                        <td>@(_team1SpecialTeamsWeight.ToString("#,#", CultureInfo.InvariantCulture)) lbs</td>
+                        <td>@(_team2SpecialTeamsWeight.ToString("#,#", CultureInfo.InvariantCulture)) lbs</td>
+                    </tr>
+                    <tr class="table-bottom-row">
+                        <th scope="row">Total</th>
+                        <td>@(_team1TotalWeight.ToString("#,#", CultureInfo.InvariantCulture)) lbs</td>
+                        <td>@(_team2TotalWeight.ToString("#,#", CultureInfo.InvariantCulture)) lbs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 
 @code {
+
+    private CultureInfo _cultureInfo = new CultureInfo("en-us");
 
     // Team 1 Fields
     private int _team1Id = 1;
@@ -52,6 +71,14 @@
     private Team _team1 = new Team();
 
     private string _team1RawHtml;
+
+    private double _team1OffenseWeight;
+
+    private double _team1DefenseWeight;
+
+    private double _team1SpecialTeamsWeight;
+
+    private double _team1TotalWeight;
     
 
     // Team 2 Fields
@@ -60,6 +87,14 @@
     private Team _team2 = new Team();
 
     private string _team2RawHtml;
+
+    private double _team2OffenseWeight;
+
+    private double _team2DefenseWeight;
+
+    private double _team2SpecialTeamsWeight;
+
+    private double _team2TotalWeight;
 
     protected override void OnInitialized()
     {
@@ -75,11 +110,21 @@
     {
         _team1 = TeamRosterService.GetTeamById(Int32.Parse(args.Value.ToString()));
         _team1RawHtml = TeamRosterService.GetRawHtml(_team1.RosterUrl);
+        _team1OffenseWeight = TeamRosterService.GetWeightInLbs(_team1, TeamDivision.Offense, _team1RawHtml);
+        _team1DefenseWeight = TeamRosterService.GetWeightInLbs(_team1, TeamDivision.Defense, _team1RawHtml);
+        _team1SpecialTeamsWeight = TeamRosterService.GetWeightInLbs(_team1, TeamDivision.SpecialTeams, _team1RawHtml);
+
+        _team1TotalWeight = _team1OffenseWeight + _team1DefenseWeight + _team1SpecialTeamsWeight;
     }
 
     private void UpdateTeam2(ChangeEventArgs args)
     {
         _team2 = TeamRosterService.GetTeamById(Int32.Parse(args.Value.ToString()));
         _team2RawHtml = TeamRosterService.GetRawHtml(_team2.RosterUrl);
+        _team2OffenseWeight = TeamRosterService.GetWeightInLbs(_team2, TeamDivision.Offense, _team2RawHtml);
+        _team2DefenseWeight = TeamRosterService.GetWeightInLbs(_team2, TeamDivision.Defense, _team2RawHtml);
+        _team2SpecialTeamsWeight = TeamRosterService.GetWeightInLbs(_team2, TeamDivision.SpecialTeams, _team2RawHtml);
+
+        _team2TotalWeight = _team2OffenseWeight + _team2DefenseWeight + _team2SpecialTeamsWeight;
     }
 }
